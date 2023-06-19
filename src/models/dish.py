@@ -34,6 +34,7 @@ class Dish:
         return set(
             restriction
             for ingredient in self.recipe.keys()
+
             for restriction in ingredient.restrictions
         )
 
